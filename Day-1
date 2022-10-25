@@ -1,0 +1,30 @@
+                                    Javascript
+Everything in javascript happens inside and executive context.
+
+
+What is executive context? executive context can be assumed as a box or container that contains two components memory component is also known as variable environment which stores data like variables and their values and functions etc….
+The other one is code component which is also known as thread of execution I.e.., code is executed line wise and after execution of one line the other line will be executed
+
+
+Java script is a synchronous single threaded language
+Single threaded means it can execute only one command at a time and synchronous in specific order I.e.., it can execute only single command at a time and that too in a specific order
+
+
+What happens when a code is set to  run in js?
+First it will create a global execution context then from there code execution is done in two phases .
+Phase 1: Memory creation
+In this when the command encounters a variable it allocates a memory in memory component and will allot undefined keyword for it(very very imp) but whenever command encounters a function the whole code in the function is get stored in the variable assigned for the function
+Phase 2:code execution phase
+Whenever command encounters a variable it will assign the value to the memory allotted for the variable but when it invokes a function at particular variable  then it creates a local executive context inside the global executive context and in that it again undergoes phase1 and phase 2 and when it encounters a return command then it will assign the value to the specified variable and returns the control to the global executive context and this whole local executive context gets deleted then and there and as soon as the whole code is executed the global executive context will also gets deleted
+
+
+Hosting in javascript (magics and very different from other languages):
+Console.log();//for printing in output 
+Variable is declared as var 
+Function is declared as function get_name(){} 
+Arrow function declaration var get_name = () =>{}
+Difference between arrow function and function is the arrow function is treated as a variable during the memory creation phase execution so get_name will be storing undefined key word in its memory location however a function stores the whole code
+There is also another way for declaration of function that is var get_name =function() {} in this case also it behaves like a variable
+***very very imp as we seen before the memory creation phase is done before the code execution phase keeping this in mind we should guess the output of given code
+
+
