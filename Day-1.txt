@@ -18,7 +18,7 @@ Phase 2:code execution phase
 Whenever command encounters a variable it will assign the value to the memory allotted for the variable but when it invokes a function at particular variable  then it creates a local executive context inside the global executive context and in that it again undergoes phase1 and phase 2 and when it encounters a return command then it will assign the value to the specified variable and returns the control to the global executive context and this whole local executive context gets deleted then and there and as soon as the whole code is executed the global executive context will also gets deleted
 
 
-Hosting in javascript (magics and very different from other languages):
+Hoisting in javascript (magics and very different from other languages):
 Console.log();//for printing in output 
 Variable is declared as var 
 Function is declared as function get_name(){} 
