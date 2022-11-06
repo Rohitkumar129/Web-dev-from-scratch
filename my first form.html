@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first web form</title>
+    </head>
+    <body>
+            <!--in order to initiate the forms we shall be using form tag-->
+            <form>
+                <!--lable tag will be labelling the input required by the user at that pointand for attribute pairs the label with the input id specified-->
+                <label for="username">Enter Username: </label>
+                <input type="text" id="username">
+                <br><br>
+                <!--id attribute just helps us to pair up the label and input whereas name tag will be helpful for the php server inorder to access that particular input data-->
+                <label for="email">Enter email: </label>
+                <input type="email" name="email">
+                <br>
+                <br>
+                <!--email type provides different keypad and password type will be providing the data privacy at the user end-->
+                <label for="password">Password: </label>
+                <input type="password" name="password">
+                <!--name tag also is very useful in grouping the common data -->
+                <!--the radio type allows us to make the type as choosing one from many in that particular name group-->
+                <p>select your age:</p>
+                <input type="radio" name="age" value="0-16" id="option-1">
+                <label for="option-1">0-16</label><br>
+                <input type="radio" name="age" value="17-25" id="option-2">
+                <label for="option-2">17-25</label><br>
+                <input type="radio" name="age" value="25-40" id="option-3">
+                <label for="option-3">25-40</label><br>
+                <input type="radio" name="age" value="above 40" id="option-4">
+                <label for="option-4">above 40</label><br>
+                <!--drop box-->
+                <!--for this we will be using select and option tags-->
+                <br>
+                <label for="question">Security question:</label>
+                <select name="question" id="question">
+                    <option value="q1">what is your favourite sport?</option>
+                    <option value="q2">who is your favourite actor?</option>
+                    <option value="q3">what is your favourite street food?</option>
+                </select>
+                <br>
+                <label for="answer">Security answer:</label>
+                <input type="text" name="answer" id="answer">
+                <br>
+                <!--now we can also provide the box of required size for writing answer using textarea name tag and placeholder name tag is a tag which appears in answer but the user can write over it-->
+                <label for="bio">Your bio:</label>
+                <br>
+                <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Your bio"></textarea>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+    </body>
+</html>
